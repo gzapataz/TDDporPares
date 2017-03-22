@@ -18,6 +18,7 @@ class Estadisticas:
             i = 0
             minimo = int(numeros[0]) #La primera vez se asume que el minimo viene en la primera posicion, luego viene la comparacion
             maximo = int(numeros[0]) # La primera vez se asume que el maximo viene en la primera posicion, luego viene la comparacion
+            suma = 0.0
 
             for num in numeros:
                 i = i+1
@@ -27,8 +28,11 @@ class Estadisticas:
                 if int(num) > int(maximo):
                     maximo=int(num)
 
+                suma = suma + int(num)
+
             cadenaResp[0] = i
             cadenaResp[1] = int(minimo)
             cadenaResp[2] = int(maximo)
+            cadenaResp[3] = suma / i
 
         return cadenaResp

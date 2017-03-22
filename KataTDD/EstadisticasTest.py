@@ -79,5 +79,7 @@ class EstadisticasTest(TestCase):
        self.assertEqual(Estadisticas().calcular("13")[3], 13, "Promedio con un Numero")
 
     # Iteracion 3
-    def test_calcular_un_numero(self):
+    def test_calcular_prom_dos_numero(self):
         self.assertEqual(Estadisticas().calcular("13, 3")[3], 8, "Promedio con un dos numeros")
+        self.assertEqual(Estadisticas().calcular("13, 2")[3], 7.5, "Promedio con un dos numeros")
+        self.assertEqual(Estadisticas().calcular("13, 0")[3], 6.5, "Promedio con un dos numeros")
