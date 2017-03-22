@@ -38,4 +38,8 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().calcular("25,10")[1], 10, "Ciclo con dos numeros, devuelve el minimo de los dos")
         self.assertEqual(Estadisticas().calcular("11,40")[1], 11, "Ciclo con dos numeros, devuelve el minimo de los dos")
 
+    # Iteracion 4
+    def test_calcular_dos_numeros_minimo(self):
+        self.assertEqual(Estadisticas().calcular("25,10, 9")[1], 9, "Ciclo con varios numeros, devuelve el minimo de los dos")
+
 
