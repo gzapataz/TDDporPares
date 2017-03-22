@@ -11,3 +11,4 @@ class EstadisticasTest(TestCase):
 
     def test_calcular_dos_numeros(self):
         self.assertEqual(Estadisticas().calcular("25,10")[0],2, "Ciclo con dos numeros, devuelve numero de elementos")
+
