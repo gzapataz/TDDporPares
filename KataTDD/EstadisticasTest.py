@@ -57,3 +57,13 @@ class EstadisticasTest(TestCase):
     # Iteracion 3
     def test_calcular_maximo_dos_numero(self):
         self.assertEqual(Estadisticas().calcular("22,33")[2], 33, "Maximo con dos Numeros")
+
+    # Iteracion 4
+    def test_calcular_varios_numeros(self):
+        self.assertEqual(Estadisticas().calcular("10, 12, 30")[2], 30, "Ciclo con varios numeros, Maximo con n Numeros, 1")
+        self.assertEqual(Estadisticas().calcular("32, 12, 10")[2], 32, "Ciclo con varios numeros, Maximo con n Numeros, 2")
+        self.assertEqual(Estadisticas().calcular("25, 30, 12")[2], 30, "Ciclo con varios numeros, Maximo con n Numeros, 3")
+        self.assertEqual(Estadisticas().calcular("10, 12, 30, 45")[2], 45, "Ciclo con varios numeros, Maximo con n Numeros, 4")
+        self.assertEqual(Estadisticas().calcular("70, 50, 10, 12")[2], 70, "Ciclo con varios numeros, Maximo con n Numeros, 5")
+        self.assertEqual(Estadisticas().calcular("25, 50, 10, 12")[2], 50, "Ciclo con varios numeros, Maximo con n Numeros, 6")
+        self.assertEqual(Estadisticas().calcular("25, 1, 55, 12")[2], 55, "Ciclo con varios numeros, Maximo con n Numeros, 7")
