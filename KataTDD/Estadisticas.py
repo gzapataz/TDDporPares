@@ -1,11 +1,12 @@
 class Estadisticas:
     def calcular(self, cadena):
-        cadenaResp = [0, 0, 0]
+        cadenaResp = [0, 0, 0, 0]
 
         if cadena == "":
             cadenaResp[0] = 0 #numero de elementos
             cadenaResp[1] = 0 #minimo en la secuencia
             cadenaResp[2] = 0 #maximo en la secuencia
+            cadenaResp[3] = 0  # promedio en la secuencia
 
         elif "," not in cadena:
             cadenaResp[0] = 1
