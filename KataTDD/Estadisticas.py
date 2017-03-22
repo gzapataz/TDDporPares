@@ -1,17 +1,17 @@
 class Estadisticas:
     def calcular(self, cadena):
-        cadenaResp = [0]
-        cadenaResp[0] = 0
+        cadenaResp = [0, 0]
 
         if cadena == "":
-            return cadenaResp
+            cadenaResp[0] = 0
+            cadenaResp[1] = 0
         elif "," not in cadena:
             cadenaResp[0] = 1
-            return cadenaResp
         else:
             numeros = cadena.split(",")
             i = 0
             for num in numeros:
                 i = i+1
             cadenaResp[0] = i
-            return cadenaResp
+
+        return cadenaResp
