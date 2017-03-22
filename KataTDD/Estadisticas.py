@@ -11,8 +11,14 @@ class Estadisticas:
         else:
             numeros = cadena.split(",")
             i = 0
+            minimo = numeros[0] #La primera vez se asume que el minimo viene en la primera posicion, luego viene la comparacion
+
             for num in numeros:
                 i = i+1
+                if num < minimo:
+                    minimo=num
+
             cadenaResp[0] = i
+            cadenaResp[1] = int(minimo)
 
         return cadenaResp

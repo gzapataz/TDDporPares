@@ -26,7 +26,6 @@ class EstadisticasTest(TestCase):
 
     # Iteracion 1
     def test_calcular_minimo(self):
-        self.assertEqual(Estadisticas().calcular("")[0], 0, "String Vacio")
         self.assertEqual(Estadisticas().calcular("")[1], 0, "String Vacio y minimo")
 
     # Iteracion 2
@@ -35,6 +34,8 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().calcular("25")[1], 25, "Minimo un Numero")
 
     # Iteracion 3
-    def test_calcular_dos_numeros(self):
-        self.assertEqual(Estadisticas().calcular("25,10")[0], 2, "Ciclo con dos numeros, devuelve numero de elementos")
+    def test_calcular_dos_numeros_minimo(self):
         self.assertEqual(Estadisticas().calcular("25,10")[1], 10, "Ciclo con dos numeros, devuelve el minimo de los dos")
+        self.assertEqual(Estadisticas().calcular("11,40")[1], 11, "Ciclo con dos numeros, devuelve el minimo de los dos")
+
+
