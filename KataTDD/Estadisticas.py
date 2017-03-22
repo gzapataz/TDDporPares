@@ -8,3 +8,6 @@ class Estadisticas:
         elif "," not in cadena:
             cadenaResp[0] = 1
             return cadenaResp
+        else:
+            cadenaResp[0] = 2
+            return cadenaResp
