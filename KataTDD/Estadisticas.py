@@ -15,13 +15,17 @@ class Estadisticas:
             numeros = cadena.split(",")
             i = 0
             minimo = numeros[0] #La primera vez se asume que el minimo viene en la primera posicion, luego viene la comparacion
+            maximo = numeros[0] # La primera vez se asume que el maximo viene en la primera posicion, luego viene la comparacion
 
             for num in numeros:
                 i = i+1
                 if num < minimo:
                     minimo=num
+                elif num > maximo:
+                    maximo=num
 
             cadenaResp[0] = i
             cadenaResp[1] = int(minimo)
+            cadenaResp[2] = int(maximo)
 
         return cadenaResp
