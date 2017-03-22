@@ -12,6 +12,7 @@ class Estadisticas:
             cadenaResp[0] = 1
             cadenaResp[1] = int(cadena)
             cadenaResp[2] = int(cadena)
+            cadenaResp[3] = int(cadena)
         else:
             numeros = cadena.split(",")
             i = 0
