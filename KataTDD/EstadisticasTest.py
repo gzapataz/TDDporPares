@@ -7,4 +7,4 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().calcular("")[0],0, "String Vacio")
 
     def test_calcular_un_numero(self):
-        self.assertEqual(Estadisticas().calcular("1")[0],1, "Ciclo un Numero")
+        self.assertEqual(Estadisticas().calcular("25")[0],1, "Ciclo un Numero")

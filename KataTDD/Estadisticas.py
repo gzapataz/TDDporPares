@@ -5,3 +5,6 @@ class Estadisticas:
 
         if cadena =="":
             return cadenaResp
+        elif "," not in cadena:
+            cadenaResp[0] = 1
+            return cadenaResp
