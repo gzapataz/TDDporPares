@@ -67,3 +67,9 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().calcular("70, 50, 10, 12")[2], 70, "Ciclo con varios numeros, Maximo con n Numeros, 5")
         self.assertEqual(Estadisticas().calcular("25, 50, 10, 12")[2], 50, "Ciclo con varios numeros, Maximo con n Numeros, 6")
         self.assertEqual(Estadisticas().calcular("25, 1, 55, 12")[2], 55, "Ciclo con varios numeros, Maximo con n Numeros, 7")
+
+    #Paso 4 Devolver un arreglo con el numero de elementos y el minimo y el maximo, y el promedio
+
+    #Iteracion 1
+    def test_calcular_promedio(self):
+        self.assertEqual(Estadisticas().calcular("")[3], 0, "String Vacio y Promedio")
