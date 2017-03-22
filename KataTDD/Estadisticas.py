@@ -9,5 +9,9 @@ class Estadisticas:
             cadenaResp[0] = 1
             return cadenaResp
         else:
-            cadenaResp[0] = 2
+            numeros = cadena.split(",")
+            i = 0
+            for num in numeros:
+                i = i+1
+            cadenaResp[0] = i
             return cadenaResp
