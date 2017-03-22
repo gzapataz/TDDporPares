@@ -7,6 +7,7 @@ class Estadisticas:
             cadenaResp[1] = 0
         elif "," not in cadena:
             cadenaResp[0] = 1
+            cadenaResp[1] = int(cadena)
         else:
             numeros = cadena.split(",")
             i = 0
